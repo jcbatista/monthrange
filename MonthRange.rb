@@ -1,17 +1,20 @@
 require 'date'
 
-# display sequential month ranges from an array of durations given a start data
+# display sequential month ranges from an array of durations given a start date
 #
-# durations = [1,2,1,2,12]
+# durations = [2,1,2,1,2,24,3]
 # MonthRange.new("January 2000")
 #          .process(durations)
 #          .display()
 #
-# 1. February 2001 (1 month)
-# 2. March 2001 - April 2001 (2 months)
-# 3. March 2001 (1 month)
-# 4. March 2001 - April 2001 (2 months)
-# 5. March 2001 - February 2002 (12 months)
+# 1. January 2000 - February 2000 (2 months)
+# 2. March 2000 (1 month)
+# 3. April 2000 - May 2000 (2 months)
+# 4. June 2000 (1 month)
+# 5. July 2000 - August 2000 (2 months)
+# 6. September 2000 - August 2002 (2 years)
+# 7. September 2002 - November 2002 (3 months)
+
 
 class MonthRange
 
